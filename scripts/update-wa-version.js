@@ -67,7 +67,7 @@ async function main() {
 
     const vStr = `[${version.join(', ')}]`;
     
-    updateJson('lib/Defaults/yebail-version.json', version);
+    updateJson('lib/Defaults/dinz-version.json', version);
     updateFile('lib/Defaults/index.js', /exports\.version\s*=\s*\[\d+,\s*\d+,\s*\d+\]/g, `exports.version = ${vStr}`);
 
     console.log('Update complete!');
